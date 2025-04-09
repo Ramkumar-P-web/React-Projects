@@ -1,0 +1,139 @@
+{
+    "posts": [
+      {
+        "id": "1",
+        "username": "nature_lover",
+        "profile_picture": "src/assets/PostImges/DP/download (1).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.29.27 - A beautiful sunset at the beach with golden skies and ocean waves, perfect for an Instagram post.webp",
+        "caption": "Beautiful sunset at the beach!",
+        "likes": 120,
+        "comments": [
+          { "user": "travel_guru", "text": "Wow! Amazing view!" },
+          { "user": "sunset_fan", "text": "This is breathtaking!" }
+        ]
+      },
+      {
+        "id": "2",
+        "username": "foodie_delight",
+        "profile_picture": "src/assets/PostImges/DP/download (2).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.36.42 - A plate of delicious homemade pasta with creamy sauce, garnished with basil and parmesan, perfect for a food Instagram post.webp",
+        "caption": "Homemade pasta with creamy sauce! 🍝",
+        "likes": 85,
+        "comments": [
+          { "user": "chef_joy", "text": "Looks delicious!" }
+        ]
+      },
+      {
+        "id": "3",
+        "username": "tech_guy",
+        "profile_picture": "src/assets/PostImges/DP/download (3).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.36.46 - A modern laptop setup on a wooden desk with a coding screen, coffee cup, and a minimalistic aesthetic, perfect for an Instagram post.webp",
+        "caption": "New laptop setup! Ready to code! 💻",
+        "likes": 200,
+        "comments": [
+          { "user": "dev_master", "text": "Which laptop is this?" },
+          { "user": "coder_life", "text": "Awesome setup!" }
+        ]
+      },
+      {
+        "id": "4",
+        "username": "fitness_freak",
+        "profile_picture": "src/assets/PostImges/DP/download (4).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.36.49 - A fitness enthusiast doing a morning workout in a gym, lifting weights with a determined expression, perfect for an Instagram post.webp",
+        "caption": "Morning workout done! #NoPainNoGain 💪",
+        "likes": 150,
+        "comments": []
+      },
+      {
+        "id": "5",
+        "username": "pet_lover",
+        "profile_picture": "src/assets/PostImges/DP/download (5).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.36.52 - A cute and fluffy puppy sitting on a soft blanket, looking playful and happy, perfect for an Instagram post.webp",
+        "caption": "Meet my new puppy! 🐶",
+        "likes": 300,
+        "comments": [
+          { "user": "dog_mom", "text": "So adorable!" }
+        ]
+      },
+      {
+        "id": "6",
+        "username": "travel_diary",
+        "profile_picture": "src/assets/PostImges/DP/download (6).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.36.57 - A breathtaking view of mountains with a traveler standing on a peak, enjoying the scenic landscape, perfect for an Instagram post.webp",
+        "caption": "Exploring the mountains! 🏔️",
+        "likes": 180,
+        "comments": []
+      },
+      {
+        "id": "7",
+        "username": "artsy_soul",
+        "profile_picture": "src/assets/PostImges/DP/download.jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.37.03 - A beautiful painting on a canvas, featuring colorful abstract strokes and a creative artistic touch, perfect for an Instagram post.webp",
+        "caption": "My latest painting! 🎨",
+        "likes": 220,
+        "comments": [
+          { "user": "art_lover", "text": "Incredible work!" }
+        ]
+      },
+      {
+        "id": "8",
+        "username": "book_worm",
+        "profile_picture": "src/assets/PostImges/DP/images (1).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.37.07 - A cozy reading setup with an open book, a cup of coffee, and soft lighting, perfect for an Instagram post.webp",
+        "caption": "Current read: The Great Gatsby 📖",
+        "likes": 95,
+        "comments": []
+      },
+      {
+        "id": "9",
+        "username": "gamer_dude",
+        "profile_picture": "src/assets/PostImges/DP/images (2).jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.37.09 - A gamer setup with a glowing keyboard, dual monitors displaying a game, and a cool gaming atmosphere, perfect for an Instagram post.webp",
+        "caption": "Gaming night with friends! 🎮",
+        "likes": 140,
+        "comments": [
+          { "user": "pro_gamer", "text": "What game are you playing?" }
+        ]
+      },
+      {
+        "id": "10",
+        "username": "car_enthusiast",
+        "profile_picture": "src/assets/PostImges/DP/images.jpg",
+        "image": "src/assets/PostImges/DALL·E 2025-03-24 22.37.12 - A stylish sports car parked on a scenic road with mountains in the background, perfect for an Instagram post.webp",
+        "caption": "My dream car! 🚗💨",
+        "likes": 275,
+        "comments": []
+      }
+    ],
+    "profile": {
+      "username": "nature_lover",
+      "name": "Alice",
+      "profile_picture": "src/assets/PostImges/DP/download (1).jpg",
+      "bio": "Nature enthusiast 🌿 | Travel lover 🌍 | Photographer 📷",
+      "followers": 1500,
+      "following": 300,
+      "posts": 3
+    },
+    "suggestions": [
+      {
+        "username": "travel_guru",
+        "profile_picture": "src/assets/PostImges/DP/download (6).jpg"
+      },
+      {
+        "username": "sunset_fan",
+        "profile_picture": "src/assets/PostImges/DP/download (2).jpg"
+      },
+      {
+        "username": "chef_joy",
+        "profile_picture": "src/assets/PostImges/DP/download (3).jpg"
+      },
+      {
+        "username": "dev_master",
+        "profile_picture": "src/assets/PostImges/DP/download (4).jpg"
+      },
+      {
+        "username": "dog_mom",
+        "profile_picture": "src/assets/PostImges/DP/download (5).jpg"
+      }]
+  }
+  

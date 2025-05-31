@@ -21,7 +21,3 @@ A simple Instagram clone built using **React** and **Bootstrap**. This project m
 - 🖼️ CSS & JSX for styling and layout
 - 📁 Organized component structure
 
----
-
-## 📂 Project Structure
-

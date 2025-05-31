@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Introduction to JavaScript",
+      "subtitle": "Basics of JavaScript programming",
+      "summary": "JavaScript is a versatile programming language used for web development.",
+      "content": "JavaScript is a versatile programming language used for web development. It allows developers to create interactive and dynamic web applications by manipulating the DOM, handling events, and making API requests. JavaScript is supported by all modern browsers and can be used both on the client-side and server-side with environments like Node.js."
+    },
+    {
+      "id": "2",
+      "title": "Getting Started with React",
+      "subtitle": "A beginner's guide to React.js",
+      "summary": "React is a JavaScript library for building user interfaces.",
+      "content": "React is a JavaScript library for building user interfaces. It is based on the concept of components, which are reusable pieces of UI. React uses a virtual DOM to efficiently update the UI when state changes occur. Developers can use hooks and props to manage state and pass data between components."
+    },
+    {
+      "id": "3",
+      "title": "Understanding APIs",
+      "subtitle": "How APIs work and why they are important",
+      "summary": "APIs allow different software systems to communicate with each other.",
+      "content": "APIs (Application Programming Interfaces) allow different software systems to communicate with each other. They can be RESTful or GraphQL-based, providing a structured way to request and exchange data. APIs are used in web development to fetch or send data from servers, integrate third-party services, and build scalable applications."
+    },
+    {
+      "id": "4",
+      "title": "CSS Flexbox Explained",
+      "subtitle": "A guide to CSS Flexbox layout",
+      "summary": "Flexbox is a CSS layout model designed to distribute space efficiently.",
+      "content": "Flexbox is a CSS layout model designed to distribute space efficiently among items in a container. It allows developers to create flexible and responsive layouts with properties like justify-content, align-items, and flex-wrap. Flexbox is widely used for building modern web page designs."
+    },
+    {
+      "id": "5",
+      "title": "Introduction to Node.js",
+      "subtitle": "Learn the basics of Node.js",
+      "summary": "Node.js is a JavaScript runtime built on Chrome's V8 engine.",
+      "content": "Node.js is a JavaScript runtime built on Chrome's V8 engine that allows developers to run JavaScript outside the browser. It is commonly used for backend development, creating APIs, and handling server-side logic. Node.js uses an event-driven, non-blocking architecture for handling concurrent operations efficiently."
+    },
+    {
+      "id": "6",
+      "title": "Understanding Asynchronous JavaScript",
+      "subtitle": "Promises, async/await, and callbacks",
+      "summary": "Asynchronous programming in JavaScript allows operations to run in the background.",
+      "content": "Asynchronous programming in JavaScript allows operations to run in the background without blocking the main thread. Callbacks, Promises, and async/await are used to handle asynchronous tasks such as fetching data from an API, reading files, or processing user input. Mastering these concepts is essential for efficient JavaScript development."
+    },
+    {
+      "id": "7",
+      "title": "Building a REST API with Express.js",
+      "subtitle": "Step-by-step guide to building APIs",
+      "summary": "Express.js is a lightweight and flexible Node.js framework for web applications.",
+      "content": "Express.js is a lightweight and flexible Node.js framework for building web applications and APIs. It provides a simple way to handle routing, middleware, and request handling. With Express, developers can create RESTful APIs to serve data to frontend applications."
+    },
+    {
+      "id": "8",
+      "title": "Database Basics with MongoDB",
+      "subtitle": "Introduction to NoSQL databases",
+      "summary": "MongoDB is a NoSQL database that stores data in JSON-like documents.",
+      "content": "MongoDB is a NoSQL database that stores data in JSON-like documents. It is designed for scalability and flexibility, allowing developers to work with unstructured data efficiently. MongoDB supports operations like querying, indexing, and data aggregation."
+    },
+    {
+      "id": "9",
+      "title": "Version Control with Git",
+      "subtitle": "Learn the basics of Git and GitHub",
+      "summary": "Git is a distributed version control system that helps developers track code changes.",
+      "content": "Git is a distributed version control system that helps developers track changes in their code. It allows for collaboration, branching, and maintaining a history of modifications. GitHub is a platform that hosts Git repositories, enabling teams to manage and share projects efficiently."
+    },
+    {
+      "id": "10",
+      "title": "Deploying Web Apps with Vercel",
+      "subtitle": "A simple way to deploy frontend applications",
+      "summary": "Vercel is a cloud platform that enables developers to deploy web applications quickly.",
+      "content": "Vercel is a cloud platform that enables developers to deploy web applications quickly. It provides features like automatic deployments, serverless functions, and custom domains. Vercel is widely used for hosting React, Next.js, and static sites with ease."
+    }
+  ]
+}

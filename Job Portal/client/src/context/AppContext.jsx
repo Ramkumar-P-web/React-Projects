@@ -3,7 +3,7 @@ import { createContext,useState } from "react";
 export const AppContext = createContext();
 
 export const AppContextProvider = (props)=>{
-    
+
     const [searchFilter, setSearchFilter] = useState({
         title: '',
         location: ''
@@ -11,7 +11,7 @@ export const AppContextProvider = (props)=>{
 
     const[ isSearched , setIsSearched] = useState(false);
 
-    const value = {searchFilter,setSearchFilter,isSearched,setIsSearched};
+    const value = {setSearchFilter,searchFilter,isSearched,setIsSearched};
 
     return (<AppContext.Provider value={value}>{props.children}</AppContext.Provider>)
 }

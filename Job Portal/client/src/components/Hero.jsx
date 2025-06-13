@@ -15,10 +15,6 @@ const Hero = () => {
             location: locationRef.current.value
         })
         setIsSearched(true)
-        console.log({
-            title: titleRef.current.value,
-            location: locationRef.current.value
-        })
     };
 
   return (
@@ -36,7 +32,7 @@ const Hero = () => {
                     <img className='h-4 sm:h-5' src={assets.location_icon} alt="search_icon" />
                     <input ref={locationRef} type="text" placeholder='Location'className='max-sm:text-xs p-2 rounded outline-none w-full' />
                 </div>
-                <button onClick={ e => onSearch()} className='cursor-pointer bg-blue-600 px-6 sm:px-9 py-2 rounded text-white m-1'>Search</button>
+                <button onClick={onSearch} className='cursor-pointer bg-blue-600 px-6 sm:px-9 py-2 rounded text-white m-1'>Search</button>
         </div>
         </div>
 

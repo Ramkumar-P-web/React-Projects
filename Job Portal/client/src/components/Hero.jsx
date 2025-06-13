@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useContext, useRef } from 'react'
 import { assets } from '../assets/assets'
+import { AppContext } from '../context/AppContext';
 
 const Hero = () => {
+    
+    const {setSearchFilter,setIsSearched} = useContext(AppContext);
+
+    const titleRef = useRef(null);
+    const locationRef = useRef(null);
+
+    const onSearch = ()=>{
+        setSearchFilter({
+            title: titleRef.current.value,
+            location: locationRef.current.value
+        })
+        setIsSearched(true)
+        console.log({
+            title: titleRef.current.value,
+            location: locationRef.current.value
+        })
+    };
+
   return (
     <div className='container 2xl:px-20 mx-auto my-10'>
         <div className='bg-gradient-to-r from-purple-800 to-purple-950 py-16 text-center mx-2 rounded-xl text-white'>
@@ -10,14 +29,14 @@ const Hero = () => {
             <div className='flex justify-between items-center bg-white rounded text-gray-600 max-w-xl pl-4 mx-4 sm:mx-auto'>
                 <div className='flex items-center'>
                     <img className='h-4 sm:h-5' src={assets.search_icon} alt="search_icon" />
-                    <input type="text" placeholder='Search for jobs' className='max-sm:text-xs p-2 rounded outline-none w-full' />
+                    <input ref={titleRef} type="text" placeholder='Search for jobs' className='max-sm:text-xs p-2 rounded outline-none w-full' />
                 </div>
                 <p className='px-2 text-gray-400 text-2xl font-light h-9'>|</p>
                 <div className='flex items-center'>
                     <img className='h-4 sm:h-5' src={assets.location_icon} alt="search_icon" />
-                    <input type="text" placeholder='Location'className='max-sm:text-xs p-2 rounded outline-none w-full' />
+                    <input ref={locationRef} type="text" placeholder='Location'className='max-sm:text-xs p-2 rounded outline-none w-full' />
                 </div>
-                <button className='bg-blue-600 px-6 sm:px-9 py-2 rounded text-white m-1'>Search</button>
+                <button onClick={onSearch} className='cursor-pointer bg-blue-600 px-6 sm:px-9 py-2 rounded text-white m-1'>Search</button>
         </div>
         </div>
 

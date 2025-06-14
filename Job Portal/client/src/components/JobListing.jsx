@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
-import { assets, JobCategories, JobLocations } from '../assets/assets';
+import { assets, JobCategories, JobLocations, jobsData } from '../assets/assets';
+import JobCard from './JobCard';
 
 const JobListing = () => {
   const {searchFilter,isSearched,setSearchFilter} = useContext(AppContext);
@@ -30,13 +31,13 @@ const JobListing = () => {
             {
               JobCategories.map((category,index)=>(
                 <li className='flex items-center gap-3' key={index}>
-                  <input className='scale-150 cursor-pointer' type="checkbox" name='' id='' />{category}({})</li>
+                  <input className='scale-130 cursor-pointer' type="checkbox" name='' id='' />{category}({})</li>
               ))
             }
           </ul>
         </div>
         {/* Location Filter */}
-        <div className='max-lg:hidden'>
+        <div className='max-lg:hidden mt-5'>
           <h3 className='font-medium text-lg py-4'>Search by Locations</h3>
           <ul className='space-y-4 text-gray-600'>
           {
@@ -48,6 +49,18 @@ const JobListing = () => {
           </ul>
         </div>
       </div>
+      {/* Job Listings */}
+      <section className='w-full lg:3/4 text-gray-800 max-lg:px-4'>
+          <h3 className='font-medium text-3xl py-2' id='job-list'>Latest jobs</h3>
+          <p className='mb-8'>Get your desired job from top companies</p>
+        <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4'>
+            {
+              jobsData.map((job,index)=>(
+                <JobCard key={index} job={job}></JobCard>
+              ))
+            }
+        </div>
+      </section>
     </div>
   )
 }

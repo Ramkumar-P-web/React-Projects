@@ -16,12 +16,12 @@ const Navbar = () => {
               user? <div className='flex gap-3 items-center'>
                   <Link to={'/applications'}>Applied Jobs</Link>
                   <p>|</p>
-                  <p>Hi, {user.firstName + user.lastName}</p>
+                  <p className='max-lg:hidden'>Hi, {user.firstName + user.lastName}</p>
                   <UserButton/>
               </div>:
               <div className='flex gap-4 max-sm:text-xs'>
                 <button className='cursor-pointer text-gray-600'>Recruiter Login</button>
-                <button onClick={e=>openSignIn()} className='cursor-pointer bg-blue-600 px-6 sm:px-9 py-2 rounded-full'>Login</button>
+                <button onClick={e=>openSignIn()} className='cursor-pointer bg-blue-600 text-white px-6 sm:px-9 py-2 rounded-full'>Login</button>
             </div>
             }
             

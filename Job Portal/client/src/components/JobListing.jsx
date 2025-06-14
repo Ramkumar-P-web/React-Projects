@@ -56,7 +56,7 @@ const JobListing = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4'>
             {
               jobsData.map((job,index)=>(
-                <JobCard key={index} job={job}></JobCard>
+                <JobCard key={index} job={job} />
               ))
             }
         </div>

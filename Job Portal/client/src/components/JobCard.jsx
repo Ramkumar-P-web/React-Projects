@@ -1,13 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { useNavigate } from 'react-router-dom'
 
 
 const JobCard = ({job}) => {
-
+ 
+    const navigate = useNavigate();
     
     return (
         
-            <div className='border border-gray-200 p-6 shadow-md rounded-lg'>
+            <div className='border border-gray-200 p-6 shadow-md rounded-lg mt-4'>
                 <div className='flex justify-between items-center'>
                      <img className='h-8' src={assets.company_icon} alt="company_icon" />
                 </div>
@@ -18,8 +20,8 @@ const JobCard = ({job}) => {
                 </div>
                 <p className='text-gray-400 text-sm mt-4' dangerouslySetInnerHTML={{__html:job.description?job.description.slice(0,150): ""}}></p>
                 <div className='flex text-sm gap-4 mt-4'>
-                    <button className='bg-blue-600 text-white rounded py-2 px-4'>Apply now</button>
-                    <button className='border border-gray-500 text-gray-500 rounded py-2 px-4'>Learn more</button>
+                    <button onClick={()=>{navigate(`/apply-job/${job._id}`);scrollTo(0,0)}}  className='cursor-pointer bg-blue-600 text-white rounded py-2 px-4'>Apply now</button>
+                    <button onClick={()=>{navigate(`/apply-job/${job._id}`);scrollTo(0,0)}}  className='cursor-pointer border border-gray-500 text-gray-500 rounded py-2 px-4'>Learn more</button>
                 </div>
             </div>
 

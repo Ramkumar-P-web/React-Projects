@@ -2,7 +2,9 @@ import React from 'react'
 
 const ManageJob = () => {
   return (
-    <div>ManageJob</div>
+    <div>
+      <table></table>
+    </div>
   )
 }
 

@@ -33,15 +33,18 @@ const RecruiterDasboard = () => {
                 <ul className='pt-5 flex flex-col items-start text-gray-800 '>
                     <NavLink className={({isActive})=>`flex items-center gap-3 p-3 sm:px-6 w-full hover:bg-gray-100 
                     ${isActive && 'bg-blue-100 text-blue-600 border-r-4 border-blue-500'} `} to={'/recruiter-dasboard/add-job'}>
-                     <img src={assets.add_icon} alt="home" /><p>Add Job</p>
+                     <img className='min-w-4' src={assets.add_icon} alt="home" />
+                     <p className='max-sm:hidden'>Add Job</p>
                       </NavLink>
                     <NavLink className={({isActive})=>`flex items-center gap-3 p-3 sm:px-6 w-full hover:bg-gray-100 
                     ${isActive && 'bg-blue-100 text-blue-600 border-r-4 border-blue-500'} `}  to={'/recruiter-dasboard/manage-job'}> 
-                    <img src={assets.home_icon} alt="home" /><p>Mange Jobs</p>
+                    <img className='min-w-4' src={assets.home_icon} alt="home" />
+                    <p className='max-sm:hidden'>Mange Jobs</p>
                     </NavLink>
                     <NavLink className={({isActive})=>`flex items-center gap-3 p-3 sm:px-6 w-full hover:bg-gray-100 
                     ${isActive && 'bg-blue-100 text-blue-600 border-r-4 border-blue-500'} `}  to={'/recruiter-dasboard/view-applications'}> 
-                    <img src={assets.person_tick_icon} alt="home" /><p>View Applications</p>
+                    <img className='min-w-4' src={assets.person_tick_icon} alt="home" />
+                    <p className='max-sm:hidden'>View Applications</p>
                     </NavLink>
                 </ul>
              </div>

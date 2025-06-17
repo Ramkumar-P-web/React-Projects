@@ -9,6 +9,7 @@ import RecruiterDasboard from './pages/RecruiterDasboard'
 import AddJob from './components/AddJob'
 import ManageJob from './components/ManageJob'
 import ViewApplications from './components/ViewApplications'
+import 'quill/dist/quill.snow.css'
 
 
 const App = () => {

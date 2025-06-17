@@ -18,7 +18,7 @@ const RecruiterDasboard = () => {
                 <div className='relative group'>
                     <img className='w-10 border rounded-full' src={assets.upload_area} alt="person" />
                     <div className='absolute hidden group-hover:block top-0 right-0 z-10 pt-12'>
-                        <ul className='list-none m-0 p-2 bg-white rounded-md text-sm'>
+                        <ul className='list-none m-0 p-2 bg-white border border-gray-400 rounded-md text-sm'>
                             <li className='px-2 py-1 cursor-pointer rounded-md pr-10 bg-red-100 text-red-400'>Logout</li>
                         </ul>
                     </div>

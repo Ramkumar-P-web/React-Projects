@@ -15,6 +15,8 @@
     "nodemon": "^3.1.10"
   },
   "dependencies": {
+    "@sentry/node": "^9.30.0",
+    "@sentry/profiling-node": "^9.30.0",
     "bcrypt": "^6.0.0",
     "cloudinary": "^2.7.0",
     "cors": "^2.8.5",

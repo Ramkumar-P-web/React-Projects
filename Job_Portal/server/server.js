@@ -19,7 +19,7 @@ app.use(express.json());
 
 //Routes
 app.get('/',(req,res)=>{
-   res.send("API Woring")
+   res.send("API Working")
 });
 // Just for verification perpose
 // app.get("/debug-sentry", function mainHandler(req, res) {

@@ -1,7 +1,7 @@
 import pkg from 'svix';
 import User from '../models/User.js';
 
-const { webhook } = pkg;
+const { Webhook } = pkg;
 
 // API Controller Fuction to Manage Clerk User with Database
 
@@ -9,14 +9,16 @@ export const clerkwebhooks = async (req,res) =>{
      try {
         
         // Create Svix Instance with clerkwebhook secret
-         const whook = new webhook(process.env.CLERK_WEBHOOK_SECRET);
-
-        //Verifying headers
-        await whook.verify(JSON.stringyfy(req.body),{
+         const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
+         const payload = JSON.stringify(req.body);
+         const headers = {
             "svix-id": req.headers["svix-id"],
             "svix-timestamp": req.headers["svix-timestamp"],
             "svix-signature": req.headers["svix-signature"]
-        });
+        }
+
+        //Verifying headers
+        await whook.verify(payload,headers);
 
         //Getting data req.body
 
@@ -35,7 +37,7 @@ export const clerkwebhooks = async (req,res) =>{
                 }
 
                 await User.create(userData);
-                res.json({});
+                res.status(200).json({});
                 break;
             }
             case 'user.updated':{
@@ -46,14 +48,14 @@ export const clerkwebhooks = async (req,res) =>{
                 }
 
                 await User.findByIdAndUpdate(data.id,userData);
-                res.json({});
+                res.status(200).json({});
                 break;
     
             }
             case 'user.deleted':{
 
                 await User.findByIdAndDelete(data.id);
-                res.json({});
+                res.status(200).json({});
                 break;
 
             }
@@ -63,6 +65,6 @@ export const clerkwebhooks = async (req,res) =>{
 
      } catch (error) {
         console.log(error);
-        res.json({success: false, message: 'Webhook Error'});
+        res.status(500).json({success: false, message: 'Webhook Error'});
      }
 }

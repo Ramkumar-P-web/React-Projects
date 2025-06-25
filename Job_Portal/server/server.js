@@ -22,9 +22,9 @@ app.get('/',(req,res)=>{
    res.send("API Working")
 });
 // Just for verification perpose
-// app.get("/debug-sentry", function mainHandler(req, res) {
-//   throw new Error("My first Sentry error!");
-// });
+app.get("/debug-sentry", function mainHandler(req, res) {
+  throw new Error("My first Sentry error!");
+});
 app.post('/webhooks',clerkwebhooks);
 
 //PORT

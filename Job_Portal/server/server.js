@@ -5,22 +5,31 @@ import 'dotenv/config'
 import connectDB from './config/db.js';  //Alwayas make sure add .js
 import * as Sentry from "@sentry/node";
 import { clerkwebhooks } from './controllers/webHook.js';
+import companyRoutes from './routes/companyRoutes.js';
+import connectCloudinary from './config/cloudinary.js';
+import jobRoutes from './routes/jobRoutes.js';
 
 //Intialize Express
 const app = express();
 
 //Connect To Database
-
 await connectDB();
+//Connect To Cloudinary
+await connectCloudinary();
 
 //MiddleWares
 app.use(cors());
 app.use(express.json());
 
+//Router
+app.use('/api/company',companyRoutes);
+app.use('/api/jobs',jobRoutes)
+
 //Routes
 app.get('/',(req,res)=>{
    res.send("API Working")
 });
+
 // Just for verification perpose
 app.get("/debug-sentry", function mainHandler(req, res) {
   throw new Error("My first Sentry error!");
